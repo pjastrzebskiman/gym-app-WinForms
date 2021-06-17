@@ -2,7 +2,7 @@
 Win Forms App intended to storage  gym's information(Personal info about competitor/ Personal Record)
 
 Why I did this? 
-I created this for storing information about competitor from my team. I may looking for competitor for second name, showl all competitor, check competitor from list or create ranking.
+I created this for storing information about competitor from my team. I may looking for competitor for last name, showl all competitor, check competitor from list or create ranking.
 
 What I learned ?
 I learned using Dapper to connect to SQL, created connection string in config file, using connection string witch helper class(Helper.cs),data access from data base with Dapper.
