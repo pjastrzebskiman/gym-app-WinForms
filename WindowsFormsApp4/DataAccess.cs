@@ -20,6 +20,31 @@ namespace WindowsFormsApp4
 
         }
 
+        public void InsertPerson(string imie, string nazwisko)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("CompetitionDB")))
+            {
+               //Person newPerson = new Person { FirstName = imie, LastName = nazwisko };
+               // List<Person> people = new List<Person>();
+               // people.Add(new Person { FirstName = imie, LastName = nazwisko });
+
+               connection.Execute("insert into Persons(FirstName,LastName) values(@FirstName, @LastName)",new Person { FirstName = imie, LastName = nazwisko });
+
+                /*string insertQuery = @"INSERT INTO [dbo].[Persons]([FirstName], [LastName]) VALUES (@FirstName, @LastName)";
+
+                var result = connection.Execute(insertQuery, new Person
+                {
+                    FirstName=imie,
+                    LastName=nazwisko
+                });*/
+
+
+
+            }
+                
+
+        }
+
         public List<Person> ShowAll()
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("CompetitionDB")))

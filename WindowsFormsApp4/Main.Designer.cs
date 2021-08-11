@@ -36,6 +36,8 @@
             this.search_results_competitor_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ranking_btn = new System.Windows.Forms.Button();
+            this.btn_add_competitor = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // szukaj_zawodnika_btn
@@ -114,11 +116,32 @@
             this.ranking_btn.UseVisualStyleBackColor = true;
             this.ranking_btn.Click += new System.EventHandler(this.ranking_btn_Click);
             // 
+            // btn_add_competitor
+            // 
+            this.btn_add_competitor.Location = new System.Drawing.Point(194, 125);
+            this.btn_add_competitor.Name = "btn_add_competitor";
+            this.btn_add_competitor.Size = new System.Drawing.Size(75, 23);
+            this.btn_add_competitor.TabIndex = 8;
+            this.btn_add_competitor.Text = "Dodaj";
+            this.btn_add_competitor.UseVisualStyleBackColor = true;
+            this.btn_add_competitor.Click += new System.EventHandler(this.btn_add_competitor_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 125);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Dodaj zawodnika";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(305, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_add_competitor);
             this.Controls.Add(this.ranking_btn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.szukaj_wynik_zaw_lbl);
@@ -144,6 +167,8 @@
         private System.Windows.Forms.Button search_results_competitor_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ranking_btn;
+        private System.Windows.Forms.Button btn_add_competitor;
+        private System.Windows.Forms.Label label2;
     }
 }
 

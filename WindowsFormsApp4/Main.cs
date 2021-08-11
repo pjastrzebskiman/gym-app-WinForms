@@ -36,5 +36,10 @@ namespace WindowsFormsApp4
         {
             new TypeOfRanking().Show();
         }
+
+        private void btn_add_competitor_Click(object sender, EventArgs e)
+        {
+            new Add_Competitor().Show();
+        }
     }
 }
